@@ -1,0 +1,120 @@
+Invoking: npm run build:prod 
+
+
+> smarteditmaster@0.0.1 build:prod
+> npm run build-container:prod && npm run build-inner:prod
+
+
+> smarteditmaster@0.0.1 build-container:prod
+> npm run build-container-only:prod && npm run copy-to-webroot -- --container
+
+
+> smarteditmaster@0.0.1 build-container-only:prod
+> webpack --config=webpack/container/webpack.prod.js
+
+assets by info 2.72 MiB [immutable]
+  assets by path *.woff2 831 KiB 20 assets
+  assets by path *.woff 1.06 MiB 19 assets
+  assets by path *.ttf 617 KiB 5 assets
+  assets by path *.svg 213 KiB
+    asset ec12308917a49959b22a.svg 107 KiB [emitted] [immutable] [from: ../smartedit-container/dist/assets/hyicon.svg] (auxiliary name: main)
+    asset 060b2710bdbbe3dfe48b.svg 106 KiB [emitted] [immutable] [from: ../smartedit-container/styling/less/bootstrap/fonts/glyphicons-halflings-regular.svg] (auxiliary name: main)
+  assets by path *.eot 33.6 KiB
+    asset 5be1347c682810f199c7.eot 19.7 KiB [emitted] [immutable] [from: ../smartedit-container/styling/less/bootstrap/fonts/glyphicons-halflings-regular.eot] (auxiliary name: main)
+    asset 9d8618b8ecb10c0742a3.eot 13.9 KiB [emitted] [immutable] [from: ../smartedit-container/dist/assets/hyicon.eot] (auxiliary name: main)
+  asset 567e1282d5111cec5a68.jpg 4.02 KiB [emitted] [immutable] [from: ../smartedit-container/assets/icon_site_placeholder.jpg] (auxiliary name: main)
+assets by path *.js 7.21 MiB
+  asset vendors.js 5.22 MiB [emitted] [minimized] [big] (id hint: defaultVendors) 1 related asset
+  asset smarteditcontainer.js 2 MiB [emitted] [minimized] [big] (name: main) 1 related asset
+asset main.css 1.51 MiB [emitted] [minimized] [big] (name: main)
+Entrypoint main [big] 8.73 MiB (2.72 MiB) = vendors.js 5.22 MiB main.css 1.51 MiB smarteditcontainer.js 2 MiB 49 auxiliary assets
+orphan modules 6.22 MiB (javascript) 3.19 MiB (asset) 7.46 KiB (runtime) [orphan] 266 modules
+runtime modules 3.39 KiB 7 modules
+modules by path ../../../smartedittools/common/temp/node_modules/.pnpm/ 10.9 MiB (javascript) 17 KiB (css/mini-extract) 1144 modules
+modules by path ../../../../ 503 KiB (javascript) 54.5 KiB (css/mini-extract) 15 modules
+modules by path ../../../cmssmartedit/apps/ 1.33 MiB (javascript) 5.85 KiB (css/mini-extract) 5 modules
+modules by path ../smartedit-commons/dist/ 891 KiB (javascript) 73.5 KiB (css/mini-extract) 3 modules
+modules by path ../smartedit-container/dist/ 468 KiB (javascript) 2.59 MiB (css/mini-extract) 3 modules
+modules by path ../smartedit-loader/dist/ 9.51 KiB (javascript) 0 bytes (css/mini-extract)
+  ../smartedit-loader/dist/styles.css 50 bytes [built] [code generated]
+  + 2 modules
+modules by path ./src/container/ 2.26 KiB
+  ./src/container/master_index.ts 1.97 KiB [built] [code generated]
+  ./src/container/thirdparties.js 299 bytes [built] [code generated]
++ 6 modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  eb8fe97a1943a7076417.ttf (323 KiB)
+  main.css (1.51 MiB)
+  smarteditcontainer.js (2 MiB)
+  vendors.js (5.22 MiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (8.73 MiB)
+      vendors.js
+      main.css
+      smarteditcontainer.js
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+
+webpack 5.74.0 compiled with 3 warnings in 41750 ms
+
+> smarteditmaster@0.0.1 copy-to-webroot
+> node ./scripts/copy-to-webroot.js --container
+
+Copying generated container sources to webroot
+Copying CKEditor sources to webroot
+
+> smarteditmaster@0.0.1 build-inner:prod
+> npm run build-inner-only:prod && npm run copy-to-webroot -- --inner
+
+
+> smarteditmaster@0.0.1 build-inner-only:prod
+> webpack --config=webpack/inner/webpack.prod.js
+
+asset smartedit.js 10.2 MiB [emitted] [minimized] [big] (name: main) 1 related asset
+asset vendors.js 5.69 MiB [emitted] [minimized] [big] (id hint: defaultVendors) 1 related asset
+Entrypoint main [big] 15.9 MiB = vendors.js 5.69 MiB smartedit.js 10.2 MiB
+orphan modules 3.51 MiB [orphan] 165 modules
+runtime modules 3.73 KiB 9 modules
+modules by path ../../../smartedittools/common/temp/node_modules/.pnpm/ 11.2 MiB 978 modules
+modules by path ../smartedit/ 9.38 MiB 47 modules
+modules by path ../../../../ 213 KiB 13 modules
+modules by path ../../../cmssmartedit/apps/ 323 KiB 5 modules
+modules by path ../smartedit-bootstrap/dist/ 4.49 KiB 3 modules
+modules by path ./src/inner/ 2.2 KiB
+  ./src/inner/master_index.ts 1.73 KiB [built] [code generated]
+  ./src/inner/thirdparties.js 480 bytes [built] [code generated]
+modules by path ../smartedit-commons/dist/ 967 KiB
+  ../smartedit-commons/dist/index.js 891 KiB [built] [code generated]
+  ../../../smartedittools/common/temp/node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../smartedit-commons/dist/styles.css 75.8 KiB [built] [code generated]
++ 9 modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  smartedit.js (10.2 MiB)
+  vendors.js (5.69 MiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (15.9 MiB)
+      vendors.js
+      smartedit.js
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+
+webpack 5.74.0 compiled with 3 warnings in 31668 ms
+
+> smarteditmaster@0.0.1 copy-to-webroot
+> node ./scripts/copy-to-webroot.js --inner
+
+Copying generated inner frame sources to webroot
+Copying CKEditor sources to webroot

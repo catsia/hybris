@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<urlrewrite>
+    <rule>
+        <condition type="header" name="hybris-Proxy-425d58b8-e1f3-4721-b249-8249d29de01f" operator="equal">eff7b78f-8f3f-4388-b8e5-6e0e701618bd</condition>
+        <from>^/xforms.*$</from>
+        <to last="true">-</to>
+    </rule>
+    <rule>
+        <condition type="header" name="hybris-Proxy-425d58b8-e1f3-4721-b249-8249d29de01f" operator="equal">eff7b78f-8f3f-4388-b8e5-6e0e701618bd</condition>
+        <from>^/.*\.(css|js|png|gif|jpeg|jpg|woff|woff2)$</from>
+        <to last="true">-</to>
+    </rule>
+    <rule>
+        <condition type="header" name="hybris-Proxy-425d58b8-e1f3-4721-b249-8249d29de01f" operator="equal">eff7b78f-8f3f-4388-b8e5-6e0e701618bd</condition>
+        <from>^/fr/[^/]+/[^/]+/(edit|new|view|pdf|tiff)/?.*$</from>
+        <to last="true">-</to>
+    </rule>
+    <rule>
+        <condition type="header" name="hybris-Proxy-425d58b8-e1f3-4721-b249-8249d29de01f" operator="equal">eff7b78f-8f3f-4388-b8e5-6e0e701618bd</condition>
+        <from>^/fr/[^/]+/[^/]+/(summary)/?.*$</from>
+        <set type="status">404</set>
+        <to last="true">null</to>
+    </rule>
+    <rule>
+        <from>^/fr/service/persistence/.*$</from>
+        <set type="status">403</set>
+        <to last="true">null</to>
+    </rule>
+    <rule>
+        <from>^/fr/service/.*$</from>
+        <to last="true">-</to>
+    </rule>
+    <rule>
+        <from>^/fr/[^/]+/[^/]+/test$</from>
+        <to last="true">-</to>
+    </rule>
+    <rule>
+        <from>^/logout.jsp</from>
+        <to last="true">-</to>
+    </rule>
+    <rule>
+        <from>^.*$</from>
+        <set type="status">403</set>
+        <to last="true">null</to>
+    </rule>
+</urlrewrite>

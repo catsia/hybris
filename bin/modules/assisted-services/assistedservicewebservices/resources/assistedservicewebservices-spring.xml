@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean parent="subclassMapping">
+		<property name="parentClass"
+				  value="de.hybris.platform.assistedservicewebservices.dto.Customer360DataWsDTO"/>
+		<property name="subclassesSet">
+			<set>
+				<value>de.hybris.platform.assistedservicewebservices.dto.C360ReviewList</value>
+				<value>de.hybris.platform.assistedservicewebservices.dto.C360StoreLocation</value>
+			</set>
+		</property>
+	</bean>
+
+	<alias name="defaultCustomer360DataTypeSectionMap" alias="customer360DataTypeSectionMap"/>
+	<util:map id="defaultCustomer360DataTypeSectionMap" key-type="java.lang.String" value-type="java.lang.String">
+		<entry key="c360ReviewList" value="feedbackSection"/>
+		<entry key="c360StoreLocation" value="storeLocationsSection"/>
+	</util:map>
+
+	<alias name="defaultCustomer360DataTypeFragmentMap" alias="customer360DataTypeFragmentMap"/>
+	<util:map id="defaultCustomer360DataTypeFragmentMap" key-type="java.lang.String" value-type="java.lang.String">
+		<entry key="c360ReviewList" value="reviewFragment"/>
+		<entry key="c360StoreLocation" value="storeLocationsFragment"/>
+	</util:map>
+</beans>

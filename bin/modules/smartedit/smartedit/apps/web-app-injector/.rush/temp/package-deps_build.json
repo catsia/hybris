@@ -1,0 +1,17 @@
+{
+  "files": {
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/.rush/temp/shrinkwrap-deps.json": "3df3b1353c459d82bc224e7d8265d98a400a61e8",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/.eslintrc.js": "4e48b6019663312b651e581a007d0eb6beab50e0",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/README.md": "92255e60882d51c886ed1bfff36d468dcd3140b4",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/package.json": "87b3ac4858728cb4fb2e641b224ece28ec1e2431",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/smartedit.json": "603fa58b04c675849e102488404ea85d4c7cb521",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/src/heartbeat.ts": "37550f1384b810d6f6c397779684168f24a3c59c",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/src/web-utils.ts": "82c4689fcd1126cb0d263a2810885c86e1a3badc",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/src/webapp-injector.ts": "62a1837dafa059b8d4679b45e0f80846bba47007",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/src/whitelisting-utils.ts": "d31d762e85e005d14a043179d742c7e731e078db",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/tsconfig.json": "aafa8793ec60fd9edca19062b6453e7bb1a5f82d",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/tsconfig.lint.json": "e729a390420235afdcb8192411223fad3fa3b719",
+    "hybris/bin/modules/smartedit/smartedit/apps/web-app-injector/webpack.conf.js": "5a292e902703d5f084bc741352199540462cc5b6"
+  },
+  "arguments": "webpack --config=webpack.conf.js "
+}

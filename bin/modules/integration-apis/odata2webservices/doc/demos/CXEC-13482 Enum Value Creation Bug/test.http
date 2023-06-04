@@ -1,0 +1,66 @@
+# First, run the impex from the setup.impex to create the IO.
+# Then, running only step 2 request reproduces the problem.
+# All other requests are for convenience and for data cleanup
+### 1: Show All PhoneTypes
+GET {{host}}/odata2webservices/TestIO/PhoneTypes
+Authorization: Basic {{user}} {{password}}
+Accept: application/json
+
+### 2: Phone with new PhoneType
+POST {{host}}/odata2webservices/TestIO/Phones
+Authorization: Basic {{user}} {{password}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "code": "phoneOne",
+  "number": "123-456-7890",
+  "type": { "code":  "OTHER" },
+  "user": { "id": "anonymous" }
+}
+
+### 3: Show all Phones
+GET {{host}}/odata2webservices/TestIO/Phones
+Authorization: Basic {{user}} {{password}}
+Accept: application/json
+
+### 4: Enum Rollback
+POST {{host}}/odata2webservices/TestIO/Phones
+Authorization: Basic {{user}} {{password}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "code": "phoneTwo",
+  "number": "123-456-7890",
+  "type": { "code":  "SECRET" }
+}
+
+###
+#-----------------------------------#
+# Misc                              #
+#-----------------------------------#
+### New PhoneType
+POST {{host}}/odata2webservices/TestIO/PhoneTypes
+Authorization: Basic {{user}} {{password}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "code": "OTHER"
+}
+
+###
+#-----------------------------------#
+# Cleanup                           #
+#-----------------------------------#
+### Delete Phone
+DELETE {{host}}/odata2webservices/TestIO/Phones('phoneOne')
+Authorization: Basic {{user}} {{password}}
+Accept: application/json
+
+### Delete PhoneType
+DELETE {{host}}/odata2webservices/TestIO/PhoneTypes('OTHER')
+Authorization: Basic {{user}} {{password}}
+Accept: application/json
+

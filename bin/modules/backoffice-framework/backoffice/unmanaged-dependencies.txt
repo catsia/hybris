@@ -1,0 +1,11 @@
+backoffice-core-22.11.0-RC9.jar
+backoffice-widgets-22.11.0-RC9.jar
+cockpitadmin-22.11.0-RC9.jar
+cockpitcore-22.11.0-RC9.jar
+cockpit-data-integration-22.11.0-RC9.jar
+cockpit-demo-widgets-22.11.0-RC9.jar
+cockpitframework-22.11.0-RC9.jar
+cockpit-module-aggregator-22.11.0-RC9.jar
+cockpit-standard-editors-22.11.0-RC9.jar
+cockpittesting-22.11.0-RC9.jar
+cockpitwidgets-22.11.0-RC9.jar

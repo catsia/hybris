@@ -1,0 +1,14 @@
+{
+    "name": "smarteditmaster",
+    "extension": {
+        "type": "master"
+    },
+    "style": {
+        "urlsToRewrite": [
+            {
+                "urlMatcher": "../../../Base/baseLib/baseTheme/fonts/*",
+                "assetsLocation": "node_modules/@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts"
+            }
+        ]
+    }
+}

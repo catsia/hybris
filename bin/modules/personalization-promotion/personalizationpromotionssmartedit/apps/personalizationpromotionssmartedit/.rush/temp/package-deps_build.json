@@ -1,0 +1,18 @@
+{
+  "files": {
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/.rush/temp/shrinkwrap-deps.json": "4c9ea5df1e1ca173e1864e8ad8a21070a99e07fb",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/.eslintrc.js": "76ad2ca6e260c7182ab38962b63335b37ddd3bc7",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/karma.conf.js": "4ecc6718d216ef6239db9daa62017899f9e6237f",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/package.json": "c8a18ed9ec1ca7b27de583c6bf5fe937fa5d94af",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/smartedit.json": "68386140dd4c1cc15588cdc79e20eea1e4b259c9",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/src/index.ts": "c7de6e3c9e9c127962139ed4cf09d97df004db51",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/src/personalizationpromotionssmartedit.ts": "7ccb3bf42b21e7ba8b63a1172a3ba5d3cf21b110",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/tests/features/PromotionsSmarteditTest.ts": "a36bf94df9eb519d408eb810e75f2e97397b0d48",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/tests/specBundle.ts": "9efa9c83006c8a5943fbd29d58388813cc25a9f5",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/tsconfig.build.json": "1c527f128b109aa7af34ff169fce38ae6b404d83",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/tsconfig.json": "ed0522a4a3356cef225d5a0022567943f0e24213",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/tsconfig.spec.json": "2acb39dd51525910a1e4ea5561797b5f27738d65",
+    "hybris/bin/modules/personalization-promotion/personalizationpromotionssmartedit/apps/personalizationpromotionssmartedit/webpack.config.spec": "be201315c297bf16fd8bf42c232738a5bfe2983b"
+  },
+  "arguments": "se-packagr "
+}

@@ -1,0 +1,163 @@
+/****************************************************
+				techne overrides
+****************************************************/
+
+// overrides default border that comes with techne
+.btn-default {
+    border: none !important;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 300;
+}
+
+select,
+option {
+    color: var(--sapField_TextColor);
+}
+
+.form-control {
+    height: auto;
+}
+
+.alert-item {
+    margin-bottom: 0;
+    &.alert-item--closeable {
+        padding-right: 50px;
+    }
+    > .close {
+        font-size: 30px;
+        top: 2px;
+        right: -25px;
+        margin-right: 0;
+    }
+    > div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.alert-item + .alert-item {
+    margin-top: 20px;
+}
+
+.alert-item--icon {
+    font-size: 36px;
+    height: 36px;
+    align-self: flex-start;
+    margin-right: 15px;
+    color: var(--sapBaseColor);
+}
+
+.alert-item--icon-span {
+    position: relative;
+    top: -12px;
+}
+
+.ySEEmptyMessage {
+    display: none;
+}
+
+.selectize-control > .selectize-dropdown {
+    top: 36px;
+}
+
+.alert.alert-success {
+    background-color: var(--sapSuccessColor);
+    border-color: var(--sapSuccessColor);
+    opacity: 0.95;
+    .close {
+        color: var(--sapBaseColor);
+    }
+}
+
+.alert.alert-danger {
+    background-color: var(--sapIndicationColor_1);
+    border-color: var(--sapIndicationColor_1);
+    opacity: 0.95;
+
+    .close {
+        color: var(--sapBaseColor);
+    }
+}
+
+.alert.alert-info {
+    background-color: var(--sapButton_Neutral_Background);
+    border-color: var(--sapButton_Neutral_Background);
+    opacity: 0.95;
+    .close {
+        color: var(--sapBaseColor);
+    }
+}
+
+.alert.alert-warning {
+    background-color: var(--sapWarningColor);
+    border-color: var(--sapWarningColor);
+    color: var(--sapField_TextColor);
+    opacity: 0.95;
+}
+
+.alert .close {
+    color: var(--sapField_TextColor);
+}
+
+.nav-tabs li a.sm-tab-error {
+    color: var(--sapErrorColor);
+}
+
+.nav-tabs li a.sm-tab-error:before {
+    content: '! ';
+}
+
+div.synchronize {
+    position: relative;
+}
+
+img.synchronize {
+    position: absolute;
+    right: 0;
+    z-index: 500;
+}
+
+.piled {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.toptoolbar {
+    position: absolute;
+    padding: 10px;
+    margin-left: 60px;
+    z-index: 100;
+}
+
+.floating-perspective {
+    position: fixed;
+    padding: 10px;
+    left: 10px;
+    z-index: 700;
+}
+
+.floating-bg {
+    color: var(--sapBaseColor);
+    border: 1px solid var(--sapBaseColor);
+    background: var(--sapButton_Neutral_Background);
+    padding: 5px 20px 0 20px;
+}
+
+.help-control .hyicon-help-icon:before {
+    &:extend(.hyicon-helpoff:before);
+}
+
+.help-control:hover .hyicon-help-icon:before {
+    &:extend(.hyicon-helpon:before);
+}
+
+.y-add-btn__text {
+    vertical-align: middle;
+}
