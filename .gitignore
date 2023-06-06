@@ -4,3 +4,10 @@
 /bin/modules
 !/bin/custom
 /roles
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
