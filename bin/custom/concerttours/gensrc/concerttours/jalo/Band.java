@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Jun 5, 2023, 5:49:36 PM                     ---
+ * --- Generated at Jun 7, 2023, 1:51:20 PM                     ---
  * ----------------------------------------------------------------
  */
 package concerttours.jalo;
@@ -38,8 +38,6 @@ public class Band extends GenericItem
 	public static final String CODE = "code";
 	/** Qualifier of the <code>Band.name</code> attribute **/
 	public static final String NAME = "name";
-	/** Qualifier of the <code>Band.history</code> attribute **/
-	public static final String HISTORY = "history";
 	/** Qualifier of the <code>Band.albumSales</code> attribute **/
 	public static final String ALBUMSALES = "albumSales";
 	/** Qualifier of the <code>Band.tours</code> attribute **/
@@ -69,7 +67,6 @@ public class Band extends GenericItem
 		final Map<String, AttributeMode> tmp = new HashMap<String, AttributeMode>();
 		tmp.put(CODE, AttributeMode.INITIAL);
 		tmp.put(NAME, AttributeMode.INITIAL);
-		tmp.put(HISTORY, AttributeMode.INITIAL);
 		tmp.put(ALBUMSALES, AttributeMode.INITIAL);
 		DEFAULT_INITIAL_ATTRIBUTES = Collections.unmodifiableMap(tmp);
 	}
@@ -186,42 +183,6 @@ public class Band extends GenericItem
 	public void setCode(final String value)
 	{
 		setCode( getSession().getSessionContext(), value );
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>Band.history</code> attribute.
-	 * @return the history - history of band
-	 */
-	public String getHistory(final SessionContext ctx)
-	{
-		return (String)getProperty( ctx, "history".intern());
-	}
-	
-	/**
-	 * <i>Generated method</i> - Getter of the <code>Band.history</code> attribute.
-	 * @return the history - history of band
-	 */
-	public String getHistory()
-	{
-		return getHistory( getSession().getSessionContext() );
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of the <code>Band.history</code> attribute. 
-	 * @param value the history - history of band
-	 */
-	public void setHistory(final SessionContext ctx, final String value)
-	{
-		setProperty(ctx, "history".intern(),value);
-	}
-	
-	/**
-	 * <i>Generated method</i> - Setter of the <code>Band.history</code> attribute. 
-	 * @param value the history - history of band
-	 */
-	public void setHistory(final String value)
-	{
-		setHistory( getSession().getSessionContext(), value );
 	}
 	
 	/**

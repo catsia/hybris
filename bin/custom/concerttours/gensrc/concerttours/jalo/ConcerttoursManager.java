@@ -1,12 +1,13 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Jun 5, 2023, 5:49:36 PM                     ---
+ * --- Generated at Jun 7, 2023, 1:51:20 PM                     ---
  * ----------------------------------------------------------------
  */
 package concerttours.jalo;
 
 import concerttours.constants.ConcerttoursConstants;
+import concerttours.jalo.AllAttributes;
 import concerttours.jalo.Band;
 import concerttours.jalo.Concert;
 import concerttours.jalo.Genre;
@@ -225,6 +226,32 @@ public class ConcerttoursManager extends Extension
 	public void removeFromBands(final EnumerationValue item, final Band value)
 	{
 		removeFromBands( getSession().getSessionContext(), item, value );
+	}
+	
+	public AllAttributes createAllAttributes(final SessionContext ctx, final Map attributeValues)
+	{
+		try
+		{
+			ComposedType type = getTenant().getJaloConnection().getTypeManager().getComposedType("AllAttributes");
+			return (AllAttributes)type.newInstance( ctx, attributeValues );
+		}
+		catch( JaloGenericCreationException e)
+		{
+			final Throwable cause = e.getCause();
+			throw (cause instanceof RuntimeException ?
+			(RuntimeException)cause
+			:
+			new JaloSystemException( cause, cause.getMessage(), e.getErrorCode() ) );
+		}
+		catch( JaloBusinessException e )
+		{
+			throw new JaloSystemException( e ,"error creating AllAttributes : "+e.getMessage(), 0 );
+		}
+	}
+	
+	public AllAttributes createAllAttributes(final Map attributeValues)
+	{
+		return createAllAttributes( getSession().getSessionContext(), attributeValues );
 	}
 	
 	public Band createBand(final SessionContext ctx, final Map attributeValues)

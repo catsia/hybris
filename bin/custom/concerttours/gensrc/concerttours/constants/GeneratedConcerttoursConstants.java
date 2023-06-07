@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Jun 5, 2023, 5:49:36 PM                     ---
+ * --- Generated at Jun 7, 2023, 1:51:20 PM                     ---
  * ----------------------------------------------------------------
  */
 package concerttours.constants;
@@ -16,6 +16,7 @@ public class GeneratedConcerttoursConstants
 	public static final String EXTENSIONNAME = "concerttours";
 	public static class TC
 	{
+		public static final String ALLATTRIBUTES = "AllAttributes".intern();
 		public static final String BAND = "Band".intern();
 		public static final String CONCERT = "Concert".intern();
 		public static final String CONCERTTYPE = "ConcertType".intern();
