@@ -1,9 +1,0 @@
-@import "cockpitng-globals.scss";
-
-div.yw-explorerTree .y-tree-icon {
-  @include setTreeIconGlyph("merchnode", "simple-payment");
-}
-
-div.yw-sideNavigation .yw-treeCellInner {
-  @include setSideNavigationIconGlyph("merchnode", "simple-payment");
-}
