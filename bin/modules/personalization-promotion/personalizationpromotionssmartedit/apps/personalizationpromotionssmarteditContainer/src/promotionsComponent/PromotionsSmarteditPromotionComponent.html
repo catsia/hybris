@@ -1,8 +1,0 @@
-<div *ngIf="getSelectedTypeCode() === getPromotionCode()">
-    <label for="promotion-selector-1" class="fd-form-label"
-        translate="personalization.modal.commercecustomization.promotion.label"></label>
-    <se-select [id]="promotion-selector-1" class="fd-form__control"
-        [placeholder]="'personalization.modal.commercecustomization.promotion.search.placeholder'"
-        [fetchStrategy]="fetchStrategy" [(model)]="selectedPromotion" [onSelect]="promotionSelectedEvent"
-        [searchEnabled]="true"></se-select>
-</div>
