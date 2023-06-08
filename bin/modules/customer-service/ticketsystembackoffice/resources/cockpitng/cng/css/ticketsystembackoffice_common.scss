@@ -1,9 +1,0 @@
-@import "cockpitng-globals.scss";
-
-div.yw-explorerTree .y-tree-icon {
-	@include setTreeIconGlyph("hmc_ticketsystemgroup", "activity-items");
-}
-
-div.yw-sideNavigation .yw-treeCellInner {
-    @include setSideNavigationIconGlyph("hmc_ticketsystemgroup", "activity-items");
-}
