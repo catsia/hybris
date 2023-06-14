@@ -9,7 +9,7 @@ import concerttours.service.BandService;
  
 public class DefaultBandService implements BandService
 {
-    private BandDAO bandDAO;
+    protected BandDAO bandDAO;
     /**
      * Gets all bands by delegating to {@link BandDAO#findBands()}.
      */

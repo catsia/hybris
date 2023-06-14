@@ -138,6 +138,22 @@
 			    </attribute>
 			 </attributes>
 		 </itemtype>
+		 
+		 <itemtype generate="true"  code="ContactRequests" extends="GenericItem" autocreate="true">
+			<deployment table="ContactRequests" typecode="30274"/>
+			<attributes>
+				<attribute qualifier="message" type="java.lang.String">
+					<description>Message</description>
+					<modifiers initial="true"/>
+					<persistence type="property"/>
+				</attribute>
+				<attribute qualifier="sender" type="java.lang.String">
+					<description>Sender</description>
+					<modifiers initial="true"/>
+					<persistence type="property"/>
+				</attribute>
+			</attributes>
+		</itemtype>
 <!--
 		<itemtype generate="true"
 		   code="MyProduct"

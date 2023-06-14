@@ -85,6 +85,14 @@
     <bean id="ConcerttoursCustomSetup" class="concerttours.setup.ConcerttoursCustomSetup" >
   	<property name="importService" ref="importService"/>
     </bean>
+    
+    <bean id="contactRequestService" class="concerttours.service.impl.DefaultContactRequestService"  >
+        <property name="flexibleSearchService" ref="flexibleSearchService"/>
+    </bean>
+    
+    
+    <bean id="trainingBandService" class="concerttours.service.impl.TrainingBandServiceImpl"
+	parent="defaultBandService"/>
 
     <bean id="concerttoursService" class="concerttours.service.impl.DefaultConcerttoursService">
         <!-- setter injection example -->
