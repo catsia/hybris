@@ -124,6 +124,10 @@
 		
 		<itemtype generate="true" code="Concert" extends="VariantProduct" autocreate="true">
 			<attributes>
+				<attribute qualifier="daysUntil" type="java.lang.Long">
+					<persistence type="dynamic" attributeHandler="concertDaysUntilAttributeHandler" />
+					<modifiers read="true" write="false" />
+				</attribute>
 			    <attribute qualifier="venue" type="java.lang.String">
 				<description>venue of concert</description>
 				<persistence type="property" />
