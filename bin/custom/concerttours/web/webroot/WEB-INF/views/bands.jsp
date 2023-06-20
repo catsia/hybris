@@ -15,22 +15,24 @@
         <td>Name</td>
         <td>Album sales</td>
         <td>History</td>
+        <td>Image</td>
       </tr>
     </thead>
-    <c:forEach begin="0" end="${bands.size()}" varStatus="loop">
+    <c:forEach begin="0" end="${bands.size() - 1}" varStatus="loop">
       <tr>
         <td>
-          ${bands[loop.index].code}
+          ${bands[loop.index].id}
         </td>
         <td>
           ${bands[loop.index].name}
         </td>
         <td>
-          ${bands[loop.index].albumSales}
+          ${bands[loop.index].albumsSold}
         </td>
         <td>
-          ${bands[loop.index].history}
+          ${bands[loop.index].description}
         </td>
+        <td><img src="${bands[loop.index].imageURL}" /></td>
       </tr>
     </c:forEach>
 </table>

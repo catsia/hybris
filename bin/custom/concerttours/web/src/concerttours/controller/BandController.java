@@ -1,6 +1,8 @@
 package concerttours.controller;
 
 
+import concerttours.data.BandData;
+import concerttours.facades.BandFacade;
 import concerttours.model.BandModel;
 import java.util.List;
 import java.util.ArrayList;
@@ -21,12 +23,12 @@ public class BandController
 {
 
 	@Autowired
-	private BandService bandService;
+	private BandFacade bandFacade;
 
 	@RequestMapping(value = "/bands", method = RequestMethod.GET)
 	public String handleRequest(final ModelMap model) throws Exception
 	{
-		List<BandModel> bands = bandService.getBands();
+		List<BandData> bands = bandFacade.getBands();
 		model.put("bands", bands);
 		return "bands";
 	}
