@@ -11,7 +11,7 @@ import concerttours.model.BandModel;
 
 public class BandAlbumSalesInterceptor implements ValidateInterceptor, PrepareInterceptor
 {
-    private static final long BIG_SALES = 50000L;
+    private static final long BIG_SALES = 500000L;
     private static final long NEGATIVE_SALES = 0L;
     @Autowired
     private EventService eventService;
