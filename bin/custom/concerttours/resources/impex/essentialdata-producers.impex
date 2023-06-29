@@ -1,0 +1,7 @@
+INSERT_UPDATE Producer;code[unique=true];firstName;lastName
+;001;Larry;Joe
+;002;Koenson;Marry
+;003;Johhny;Mnemony
+;004;Rick;Rock
+;005;Jahny;Rock
+;006;Iris;Morane
