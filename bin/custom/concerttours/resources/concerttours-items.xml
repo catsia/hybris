@@ -94,6 +94,24 @@
 			</attribute>
 		    </attributes>
 		</itemtype>
+
+		<itemtype generate="true" code="Producer" autocreate="true">
+			<deployment table="Producer" typecode="30289" />
+			<attributes>
+				<attribute qualifier="code" type="java.lang.String">
+					<description>short unique code of producer</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="firstName" type="java.lang.String">
+					<description>first name</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="lastName" type="java.lang.String">
+					<description>last name</description>
+					<persistence type="property" />
+				</attribute>
+			</attributes>
+		</itemtype>
 		
 		<itemtype generate="true" code="AllAttributes" autocreate="true">
 		    <deployment table="AllAttributes" typecode="30272" />
@@ -145,6 +163,10 @@
 				<description>type of concert (indoors or open air)</description>
 				<persistence type="property" />
 			    </attribute>
+				<attribute qualifier="producer" type="Producer">
+					<description>concert producer</description>
+					<persistence type="property" />
+				</attribute>
 			 </attributes>
 		 </itemtype>
 		 
