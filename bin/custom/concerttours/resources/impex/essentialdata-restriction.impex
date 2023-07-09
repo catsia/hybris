@@ -1,0 +1,2 @@
+INSERT_UPDATE SearchRestriction; code[unique = true]; name[lang = en];principal(UID); restrictedType(code);active;generate; query
+;newsOnlineCatalog;News Online Catalog;admin;Customer;true;true; {catalogVersionAttributeQualifier} LIKE 'online'
